@@ -2,44 +2,44 @@ import UIKit
 
 //1) Напишите переменные и константы всех базовых типов данных: int, UInt, float, double, string. У чисел вывести их минимальные и максимальные значения.
 
-let a = 10
-var b = 12
+let number = 10
+var numberOne = 12
 Int.max
 Int.min
 
-let a1: UInt = 13
-var b1: UInt = 1
+let numberTwo: UInt = 13
+var numberThree: UInt = 1
 UInt.max
 UInt.min
 
-let a2: Float = 2.15
-var b2: Float = 1.18
+let numberFour: Float = 2.15
+var numberFive: Float = 1.18
 
-let a3 = 1.8
-var b3 = 2.8
+let numberSix = 1.8
+var numberSeven = 2.8
 
-let str = "Maksim"
-let str1 = "Olga"
+let string = "Maksim"
+let stringOne = "Olga"
 
 
 //2) Создайте список товаров с различными характеристиками (количество, название). Используйте typealias.
 
 typealias Goods = Double
 
-let name = "apple"
+let fruit = "apple"
 let quantityAppleKilo = 5
 
-let name1 = "banana"
+let fruitOne = "banana"
 let quantityBananaKilo = 6.5
 
-let name2 = "lemon"
+let fruitTwo = "lemon"
 let quantityLemonKilo = 2
 
 let sumFruits = Goods(quantityAppleKilo) + quantityBananaKilo + Goods(quantityLemonKilo)
 
 //3) Напишите различные выражения с приведением типа.
 
-let number: Int = 5
+let numberInt: Int = 5
 let kilo: Double = 2.5
 let tochkaPi: Float = 3.14
 let myName: String = "Maksim"
@@ -47,7 +47,7 @@ let myName: String = "Maksim"
 
 //4) Посоздавайте свои переменные и константы. Имена, возраст, отчества и тд.
 
-let myName1 = "Maksim"
+let myNameOne = "Maksim"
 var myWifeName = "Olga"
 
 let myAge = 32
@@ -87,10 +87,10 @@ howManyWeeksInDec
 
 //8) По создавайте свои строки
 
-let myName2 = "Maksim"
+let myNameTwo = "Maksim"
 let surname = "Lopatin"
-let patronymic1 = "Yurevich"
-let fullName = myName2 + " " + patronymic1 + " " + surname
+let patronymicOne = "Yurevich"
+let fullName = myNameTwo + " " + patronymicOne + " " + surname
 fullName
 
 
@@ -99,16 +99,16 @@ fullName
 
 //10) Так же поработайте с циклом for in как в уроке
 
-for c in fullName {
-    print(c)
+for character in fullName {
+    print(character)
 }
 
 
 //11) Напишите с помощью строк своё резюме: имя, фамилия, возраст, где живете, хобби и т.п.
 
-let name5 = "Maksim"
-let surname2 = "Lopatin"
-let age1 = 32
+let nameFive = "Maksim"
+let surnameTwo = "Lopatin"
+let ageOne = 32
 let maritalStatus = "Married"
 let children = 2
 let cityOfResidence = "Izhevsk"
@@ -117,29 +117,29 @@ let hobby = "Football"
 
 //12) Соберите из этих строк 1 большую (вспоминаем интерполяцию) и выведите в консоль.
 
-print("My name is \(name5)\nMy surname is \(surname2)\nMy age is \(age1) years old\nMarital status - \(maritalStatus)\nChildren - \(children)\nI live in the city of \(cityOfResidence)\nMy hobby is \(hobby)")
+print("My name is \(nameFive)\nMy surname is \(surnameTwo)\nMy age is \(ageOne) years old\nMarital status - \(maritalStatus)\nChildren - \(children)\nI live in the city of \(cityOfResidence)\nMy hobby is \(hobby)")
 
 
 //13) Напишите 10 строк, соберите их с помощью интерполяции и поставьте в нужных местах переносы на новую строку и пробелы (см. \n и \t).
-let a11 = "One"
-let a22 = "Two"
-let a33 = "Three"
-let a4 = "Four"
-let a5 = "Five"
-let a6 = "Six"
-let a7 = "Seven"
-let a8 = "Eight"
-let a9 = "Nine"
-let a10 = "Ten"
+let figureOne = "One"
+let figureTwo = "Two"
+let figureThree = "Three"
+let figureFour = "Four"
+let figureFive = "Five"
+let figureSix = "Six"
+let figureSeven = "Seven"
+let figureEight = "Eight"
+let figureNine = "Nine"
+let figureTen = "Ten"
 
-print("Translation from Russian into English: \nОдин - \(a11)\nДва - \(a22)\nТри - \(a33)\nЧетыре - \(a4)\nПять - \(a5)\nШесть - \(a6)\nСемь - \(a7)\nВосемь - \(a8)\nДевять - \(a9)\nДесять - \(a10)")
+print("Translation from Russian into English: \nОдин - \(figureOne)\nДва - \(fruitTwo)\nТри - \(figureThree)\nЧетыре - \(figureFour)\nПять - \(figureFive)\nШесть - \(figureSix)\nСемь - \(figureSeven)\nВосемь - \(figureEight)\nДевять - \(figureNine)\nДесять - \(figureTen)")
 
 
 
 //14) Разбейте собственное имя на символы, перенося каждую букву на новую строку.
-let name4 = "Maksim"
-for i in name4 {
-    print(i)
+let nameFour = "Maksim"
+for character in nameFour {
+    print(character)
 }
 //😍 Создайте переменную типа Int и переменную типа String.
 //Тип Int преобразуйте в String и с помощью бинарного оператора сложите 2 переменные в одну строку.
